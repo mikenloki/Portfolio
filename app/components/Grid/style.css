@@ -1,0 +1,39 @@
+/* Grid Styles */
+/* Defined: .grid, .gridItem, .grid Image. */
+
+
+.grid {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  background:url('../../images/Xmatrix.png');
+}
+
+.gridItem {
+  margin:40px;
+  width:23%;
+}
+
+.gridImage {
+  width:100%;
+}
+
+.gridImage:hover {
+  box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.9);
+  transition: all 500ms ease-in-out;
+  transform: scale(1.1);
+}
+
+.BOOM {
+  font-size:72px;
+  text-align: center;
+  background:rgba(255, 0, 0, 0.70);
+}
+
+
+/*img{
+  max-width: 400px;
+  max-height: 200px'
+}
+*/
