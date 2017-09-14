@@ -19,6 +19,15 @@ export default function createRoutes() {
        },
      },
      {
+      path: '/about',
+      name: 'about',
+      getComponent(nextState, comMod) {
+        import('containers/About')
+          .then(loadModule(comMod))
+          .catch(errorLoading);
+      },
+    },
+     {
       path: '*',
       name: 'notfound',
       getComponent(nextState, comMod) {

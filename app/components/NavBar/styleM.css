@@ -1,0 +1,35 @@
+/* NavBar Mobile Styles */
+/* Defined: .siteName, .nav, .menuIcon, .navMobile, .navButton. */
+@media (max-width: 425px) {
+
+  .siteName {
+    width:90%;
+  }
+
+  .nav {
+    display:none;
+  }
+
+  .menuIcon {    /* This is for the Menu Bars on Mobile mode. */
+    display:flex;
+    margin-right:15px;
+    font-size:1.5em;
+    background:#00FFFF;
+  }
+
+  .navMobile {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+
+  .navButton {    /* This is for the dropdown buttons from Menu Bars. */
+    padding:10px;
+    margin:0 auto;
+    margin-top:10px;
+    background:#FF0000;
+    width:90%;
+    border-radius:5px;
+  }
+}

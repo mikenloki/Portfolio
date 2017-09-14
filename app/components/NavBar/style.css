@@ -1,0 +1,43 @@
+/* NavBar Styles */
+/* Defined: .navBar, .siteName, .nav, .navButton, .menuIcon. */
+.navBar {
+  display:flex;
+  flex-direction:row;
+  //background:#CC00CC;
+  //background:url('../../images/Xmatrix.png');
+  background:url('https://upload.wikimedia.org/wikipedia/commons/e/e6/Xmatrix.png');
+  width:100%;
+  height:100px;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.siteName {
+  width: 30%;
+  font-size: 3em;
+  color:#FFFFFF;
+  margin-left: 15px;
+  font-variant: small-caps;
+  font-family: 'Lobster Two';
+}
+
+.nav {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+.navButton {
+  color:#FF0000;
+  background:#00FFFF;
+  text-decoration:none;
+  margin-right: 15px;
+  font-weight:bold;
+  font-variant:small-caps;
+}
+
+.menuIcon {
+  display:none;
+}
