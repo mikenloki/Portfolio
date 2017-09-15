@@ -12,7 +12,7 @@
 
 .gridItem {
   margin:40px;
-  width:23%;
+  width:13%;
 }
 
 .gridImage {
@@ -24,6 +24,19 @@
   transition: all 500ms ease-in-out;
   transform: scale(1.1);
 }
+
+.hoverBox:hover {
+  background:rgba(255, 0, 0, 0.70);
+  width:100%;
+  height:25px;
+  display: none;
+}
+
+/*.hoverBox {
+
+  display: none;
+}*/
+
 
 .BOOM {
   font-size:72px;

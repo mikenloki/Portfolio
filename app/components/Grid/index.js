@@ -14,7 +14,7 @@ export default class Grid extends React.PureComponent {
   constructor() {
     super();
     this.state = {
-      images: ['HBomb-1.jpg', 'HBomb-2.jpg', 'HBomb-3.jpg', 'HBomb-4.jpg']
+      images: ['API-Routes.png', 'Authentication.png', 'FullPage-Slider.png', 'Grid-Layout.png', 'Photo-FrontEnd.png', 'Photo-Upload.png', 'Portfolio.png', 'Responsive-Navbar.png', 'ToDo-Backend.png', 'ToDo-List.png']
     }
   }
 
@@ -25,6 +25,8 @@ export default class Grid extends React.PureComponent {
           {this.state.images.map((image, index) => (
             <div className="gridItem" key={index}>
               <img src={require('../../images/' +image)}  className="gridImage"/>
+              <div className="hoverBox">
+              </div>
             </div>
           ))}
         </div>
