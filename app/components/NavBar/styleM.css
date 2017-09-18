@@ -1,6 +1,7 @@
 /* NavBar Mobile Styles */
 /* Defined: .siteName, .nav, .menuIcon, .navMobile, .navButton. */
-@media (max-width: 425px) {
+/*@media (max-width: 425px) {*/
+@media (max-width: 1000px) {
 
   .siteName {
     width:90%;
@@ -28,8 +29,15 @@
     padding:10px;
     margin:0 auto;
     margin-top:10px;
-    background:#FF0000;
+    /*background:#FF0000;*/
     width:90%;
     border-radius:5px;
+
+    color:#FF0000;
+    background:#00FFFF;
+    text-decoration:none;
+    /*margin-right: 15px;*/
+    font-weight:bold;
+    font-variant:small-caps;
   }
 }

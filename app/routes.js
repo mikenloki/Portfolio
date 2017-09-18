@@ -18,6 +18,7 @@ export default function createRoutes() {
            .catch(errorLoading);
        },
      },
+     
      {
       path: '/about',
       name: 'about',

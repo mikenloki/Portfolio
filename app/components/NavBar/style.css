@@ -10,6 +10,8 @@
   height:100px;
   justify-content:space-between;
   align-items:center;
+  border-style: solid;
+  border-bottom-color: #ff0000; 
 }
 
 .siteName {

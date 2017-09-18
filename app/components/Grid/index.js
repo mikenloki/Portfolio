@@ -24,13 +24,16 @@ export default class Grid extends React.PureComponent {
         <div className="grid">
           {this.state.images.map((image, index) => (
             <div className="gridItem" key={index}>
+              <div className="tooltip">
+                <span className="tooltiptext">{this.state.images[index]}</span>
+              </div>
               <img src={require('../../images/' +image)}  className="gridImage"/>
               <div className="hoverBox">
               </div>
             </div>
           ))}
         </div>
-        <div className="BOOM">BOOM!</div>
+        {/*<div className="BOOM">BOOM!</div>*/}
       </div>
     );
   }
