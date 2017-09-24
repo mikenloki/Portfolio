@@ -103,7 +103,8 @@
          <img src={this.state.preview} />
          <input type="file" onChange={this.handleLinkURL}/>
          <input type="submit" value="Submit" onClick={this.storeLinkURL}/>
-       </div>
+
+      </div>
      );
    }
  }
