@@ -9,7 +9,7 @@ const loadModule = (comMod) => (componentModule) => {
 export default function createRoutes() {
 
   return [
-      {
+    {
        path: '/',
        name: 'home',
        getComponent(nextState, comMod) {
@@ -17,25 +17,43 @@ export default function createRoutes() {
            .then(loadModule(comMod))
            .catch(errorLoading);
        },
+    },
+
+    {
+       path: '/about',
+       name: 'about',
+       getComponent(nextState, comMod) {
+         import('containers/About')
+            .then(loadModule(comMod))
+            .catch(errorLoading);
+       },
+    },
+    {
+        path: '/addAProject',
+        name: 'addAProject',
+        getComponent(nextState, comMod) {
+          import('containers/addAProject')
+            .then(loadModule(comMod))
+            .catch(errorLoading);
+        },
      },
-     
      {
-      path: '/about',
-      name: 'about',
-      getComponent(nextState, comMod) {
-        import('containers/About')
-          .then(loadModule(comMod))
-          .catch(errorLoading);
+         path: '/signIn',
+         name: 'signIn',
+         getComponent(nextState, comMod) {
+           import('containers/signIn')
+             .then(loadModule(comMod))
+             .catch(errorLoading);
+         },
       },
-    },
      {
-      path: '*',
-      name: 'notfound',
-      getComponent(nextState, comMod) {
-        import('containers/NotFoundPage')
-          .then(loadModule(comMod))
-          .catch(errorLoading);
+        path: '*',
+        name: 'notfound',
+        getComponent(nextState, comMod) {
+          import('containers/NotFoundPage')
+              .then(loadModule(comMod))
+              .catch(errorLoading);
+        },
       },
-    },
   ];
 }
