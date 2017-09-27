@@ -10,6 +10,9 @@
  import './style.css';
  import './styleM.css';
 
+ import Grid from 'components/Grid';
+ import NavBar from 'components/NavBar';
+
  export default class Home extends React.PureComponent {
 
    constructor() {
@@ -104,6 +107,8 @@
          <input type="file" onChange={this.handleLinkURL}/>
          <input type="submit" value="Submit" onClick={this.storeLinkURL}/>
 
+         <NavBar/>
+         <Grid/>
       </div>
      );
    }
